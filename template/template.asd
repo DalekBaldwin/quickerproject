@@ -11,7 +11,9 @@
   ((:static-file "(#|TMPL_VAR name |#).asd")
    (:module :src
             :components ((:file "package")
-                         (:file "(#|TMPL_VAR name |#)" :depends-on ("package"))))))
+                         (:file "(#|TMPL_VAR name |#)"))
+            :serial t))
+  :depends-on ())
 
 (defsystem :(#|TMPL_VAR name |#)-test
   :name "(#|TMPL_VAR name |#)-test"

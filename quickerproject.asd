@@ -21,4 +21,4 @@
   ((:module :test
             :components ((:file "package")
                          (:file "quickerproject-test" :depends-on ("package")))))
-  :depends-on (:quickerproject #:stefil))
+  :depends-on (:quickerproject :stefil))

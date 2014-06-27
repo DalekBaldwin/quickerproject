@@ -87,28 +87,7 @@ it is used as the asdf defsystem depends-on list."
                  :directory '(:relative "test")
                  :name (format nil "~A-test" name)
                  :type "lisp")
-                project-directory))
-              
-              #+nil
-              (delete-file (merge-pathnames
-                            #P"README.txt"
-                            project-directory))
-              #+nil
-              (delete-file (merge-pathnames 
-                            (make-pathname
-                             :name name
-                             :type "asd")
-                            project-directory))
-              #+nil
-              (delete-file (merge-pathnames
-                            #P"package.lisp"
-                            project-directory))
-              #+nil
-              (delete-file (merge-pathnames
-                            (make-pathname
-                             :name name
-                             :type "lisp")
-                            project-directory))))))
+                project-directory))))))
 
       (make-project* project-directory
                      :template-directory template-directory))))
