@@ -10,6 +10,5 @@
 (defparameter *system-directory*
   (make-pathname
    :directory 
-   (slot-value
-    (asdf:system-definition-pathname :(#|TMPL_VAR name |#))
-    'directory)))
+   (pathname-directory
+    (asdf:system-definition-pathname :(#|TMPL_VAR name |#)))))

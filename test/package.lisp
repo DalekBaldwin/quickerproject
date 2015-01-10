@@ -8,6 +8,5 @@
 (defparameter *system-directory*
   (make-pathname
    :directory 
-   (slot-value
-    (asdf:system-definition-pathname :quickerproject)
-    'directory)))
+   (pathname-directory
+    (asdf:system-definition-pathname :quickerproject))))
