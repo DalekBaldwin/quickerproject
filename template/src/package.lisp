@@ -1,4 +1,4 @@
-(in-package :cl)
+(in-package :cl-user)
 
 (defpackage :(#|TMPL_VAR name |#)
   (:use :cl))

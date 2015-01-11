@@ -1,4 +1,4 @@
-(in-package :cl)
+(in-package :cl-user)
 
 (defpackage :quickerproject
   (:use :cl)
