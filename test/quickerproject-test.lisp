@@ -7,4 +7,5 @@
   (ql:quickload :quickerproject-test-project)
   (ql:quickload :quickerproject-test-project-test)
   (eval (read-from-string "(quickerproject-test-project-test:test-all)"))
-  (is t))
+  (is t)
+  (format t "~&Quickerproject successfully generated a testable project.~%"))
