@@ -1,6 +1,8 @@
 Quickerproject
 ========
 
+[![Build Status](https://travis-ci.org/DalekBaldwin/quickerproject.svg?branch=master)](https://travis-ci.org/DalekBaldwin/quickerproject)
+
 ```
 CL-USER> (asdf:system-definition-pathname :quickerproject)
 #P"/Users/me/quicklisp/local-projects/quicker-project/quickerproject.asd"
