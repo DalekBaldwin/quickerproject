@@ -1,5 +1,5 @@
 Quickerproject
-========
+==============
 
 [![Build Status](https://travis-ci.org/DalekBaldwin/quickerproject.svg?branch=master)](https://travis-ci.org/DalekBaldwin/quickerproject)
 
