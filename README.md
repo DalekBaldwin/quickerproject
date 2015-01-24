@@ -3,6 +3,8 @@ Quickerproject
 
 [![Build Status](https://travis-ci.org/DalekBaldwin/quickerproject.svg?branch=master)](https://travis-ci.org/DalekBaldwin/quickerproject)
 
+This is fine-tuned to the way I like to set up my projects, but feel free to clone and tweak it to your heart's content.
+
 ```
 CL-USER> (asdf:system-definition-pathname :quickerproject)
 #P"/Users/me/quicklisp/local-projects/quicker-project/quickerproject.asd"
