@@ -1,4 +1,4 @@
-(in-package :quickerproject)
+(in-package #:quickerproject)
 
 (defun make-project* (pathname &key
                                  depends-on

@@ -1,12 +1,12 @@
-(in-package :cl-user)
+(in-package #:cl-user)
 
-(defpackage :(#|TMPL_VAR name |#)
-  (:use :cl))
+(defpackage #:(#|TMPL_VAR name |#)
+  (:use #:cl))
 
-(in-package :(#|TMPL_VAR name |#))
+(in-package #:(#|TMPL_VAR name |#))
 
 (defparameter *system-directory*
   (make-pathname
-   :directory 
+   :directory
    (pathname-directory
     (asdf:system-definition-pathname :(#|TMPL_VAR name |#)))))

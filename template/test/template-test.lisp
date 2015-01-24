@@ -1,4 +1,4 @@
-(in-package :(#|TMPL_VAR name |#)-test)
+(in-package #:(#|TMPL_VAR name |#)-test)
 
 (in-root-suite)
 
