@@ -7,7 +7,7 @@ This is fine-tuned to the way I like to set up my projects, but feel free to clo
 
 ```
 CL-USER> (asdf:system-definition-pathname :quickerproject)
-#P"/Users/me/quicklisp/local-projects/quicker-project/quickerproject.asd"
+#P"/Users/me/quicklisp/local-projects/quickerproject/quickerproject.asd"
 CL-USER> (quickerproject:make-project "derp")
 "derp"
 CL-USER> (asdf:system-definition-pathname :derp)
