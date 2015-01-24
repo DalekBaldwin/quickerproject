@@ -1,8 +1,8 @@
-(in-package #:cl-user)
+(in-package :cl-user)
 
-(defpackage #:quickerproject
-  (:use #:cl)
-  (:import-from #:quickproject
+(defpackage :quickerproject
+  (:use :cl)
+  (:import-from :quickproject
                 #:pathname-as-directory
                 #:pathname-project-name
                 #:rewrite-templates
@@ -15,7 +15,7 @@
   (:export
    #:make-project))
 
-(in-package #:quickerproject)
+(in-package :quickerproject)
 
 (defparameter *system-directory*
   (make-pathname

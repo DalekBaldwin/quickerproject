@@ -1,1 +1,1 @@
-(in-package #:(#|TMPL_VAR name |#))
+(in-package :(#|TMPL_VAR name |#))

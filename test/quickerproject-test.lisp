@@ -1,4 +1,4 @@
-(in-package #:quickerproject-test)
+(in-package :quickerproject-test)
 
 (defsuite* test-all)
 

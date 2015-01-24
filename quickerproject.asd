@@ -1,10 +1,10 @@
 ;;;; quickerproject.asd
 
-(defpackage #:quickerproject-system
-  (:use #:cl #:asdf))
-(in-package #:quickerproject-system)
+(defpackage :quickerproject-system
+  (:use :cl :asdf))
+(in-package :quickerproject-system)
 
-(defsystem #:quickerproject
+(defsystem :quickerproject
   :name "quickerproject"
   :serial t
   :components
@@ -12,13 +12,13 @@
    (:module :src
             :components ((:file "package")
                          (:file "quickerproject" :depends-on ("package")))))
-  :depends-on (#:quickproject))
+  :depends-on (:quickproject))
 
-(defsystem #:quickerproject-test
+(defsystem :quickerproject-test
   :name "quickerproject-test"
   :serial t
   :components
   ((:module :test
             :components ((:file "package")
                          (:file "quickerproject-test" :depends-on ("package")))))
-  :depends-on (#:quickerproject #:stefil))
+  :depends-on (:quickerproject :stefil))
