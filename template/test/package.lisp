@@ -7,8 +7,4 @@
 
 (in-package #:(#|TMPL_VAR name |#)-test)
 
-(defparameter *system-directory*
-  (make-pathname
-   :directory 
-   (pathname-directory
-    (asdf:system-definition-pathname :(#|TMPL_VAR name |#)))))
+(defparameter *system-directory* (#|TMPL_VAR name |#)::*system-directory*)

@@ -9,4 +9,4 @@
   (make-pathname
    :directory
    (pathname-directory
-    (asdf:system-definition-pathname :(#|TMPL_VAR name |#)))))
+    (asdf:system-definition-pathname "(#|TMPL_VAR name |#)"))))

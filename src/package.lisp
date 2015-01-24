@@ -21,4 +21,4 @@
   (make-pathname
    :directory 
    (pathname-directory
-    (asdf:system-definition-pathname :quickerproject))))
+    (asdf:system-definition-pathname "quickerproject"))))

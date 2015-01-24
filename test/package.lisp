@@ -7,8 +7,4 @@
 
 (in-package #:quickerproject-test)
 
-(defparameter *system-directory*
-  (make-pathname
-   :directory 
-   (pathname-directory
-    (asdf:system-definition-pathname :quickerproject))))
+(defparameter *system-directory* quickerproject::*system-directory*)
