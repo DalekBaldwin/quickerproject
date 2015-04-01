@@ -21,5 +21,5 @@
   :components
   ((:module :test
             :components ((:file "package")
-                         (:file "(#|TMPL_VAR name |#)-test" :depends-on ("package")))))
+                         (:file "(#|TMPL_VAR name |#)-test"))))
   :depends-on (:(#|TMPL_VAR name |#) :stefil))
