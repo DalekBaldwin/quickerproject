@@ -13,11 +13,17 @@
             :components ((:file "package")
                          (:file "(#|TMPL_VAR name |#)"))
             :serial t))
-  :depends-on ())
+  :depends-on ()
+  :in-order-to ((test-op (load-op :(#|TMPL_VAR name |#)-test)))
+  :perform (test-op :after (op c)
+                    (funcall
+                     (intern #.(string '#:run-all-tests)
+                             :(#|TMPL_VAR name |#)-test))))
 
 (defsystem :(#|TMPL_VAR name |#)-test
   :name "(#|TMPL_VAR name |#)-test"
   :serial t
+  :description "Tests for (#|TMPL_VAR name |#)."
   :components
   ((:module :test
             :components ((:file "package")

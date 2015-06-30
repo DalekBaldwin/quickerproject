@@ -12,11 +12,17 @@
    (:module :src
             :components ((:file "package")
                          (:file "quickerproject" :depends-on ("package")))))
-  :depends-on (:quickproject))
+  :depends-on (:quickproject)
+  :in-order-to ((test-op (load-op :quickerproject-test)))
+  :perform (test-op :after (op c)
+                    (funcall
+                     (intern #.(string '#:run-all-tests)
+                             :quickerproject-test))))
 
 (defsystem :quickerproject-test
   :name "quickerproject-test"
   :serial t
+  :description "Tests for quickerproject."
   :components
   ((:module :test
             :components ((:file "package")
